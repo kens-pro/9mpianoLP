@@ -1930,6 +1930,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .footer-social-icon { width: 40px; height: 40px; }
       .copyright { font-size: 14px; }
     }
+        /* === ★★★ 追加CSS START ★★★ === */
+    /* 特価ピアノカードのスタイル */
+    .piano-card--special {
+        border: 2px solid var(--color-gold);
+        box-shadow: 0 10px 35px rgba(218, 165, 32, 0.3);
+        position: relative;
+        overflow: hidden; /* バッジをはみ出させるために重要 */
+    }
+
+    /* 特価リボンバッジのスタイル */
+    .special-price-badge {
+        position: absolute;
+        top: 18px;
+        right: -34px;
+        background-color: var(--color-red-sale);
+        color: white;
+        padding: 8px 30px;
+        font-size: 14px;
+        font-weight: bold;
+        transform: rotate(45deg);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 2;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    /* === ★★★ 追加CSS END ★★★ === */
   </style>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-851449725">
@@ -2138,35 +2164,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="divider"></div>
       </div>
       <div class="piano-grid">
-       <div class="piano-card">
-  <div class="piano-image" style="background-image: url('images/DSC_0020.jpg');"></div>
-  <h3>ヤマハ U10A</h3>
-  <div class="price-container">
-    <strong class="sale-price">販売価格 ￥429,000</strong>
-  </div>
-  <p>癖がなく、心地よいタッチが魅力。初心者から中級者まで幅広くおすすめできる人気のスタンダードモデルです。</p>
-  <a href="https://www.toriimusic.co.jp/15438/" class="button button-outline">詳細を見る</a>
-</div>
+        <div class="piano-card">
+          <div class="piano-image" style="background-image: url('images/DSC_0020.jpg');"></div>
+          <h3>ヤマハ U10A</h3>
+          <div class="price-container">
+            <strong class="sale-price">販売価格 ￥429,000</strong>
+          </div>
+          <p>癖がなく、心地よいタッチが魅力。初心者から中級者まで幅広くおすすめできる人気のスタンダードモデルです。</p>
+          <a href="https://www.toriimusic.co.jp/15438/" class="button button-outline">詳細を見る</a>
+        </div>
 
-<div class="piano-card">
-  <div class="piano-image" style="background-image: url('images/S__48594993_0.jpg');"></div>
-  <h3>ヤマハ U1H</h3>
-  <div class="price-container">
-    <strong class="sale-price">販売価格 ￥363,000</strong>
-  </div>
-  <p>ヤマハのベーシックモデル。音色とタッチの双方が豊かであり、お子様の初めてのピアノにも非常におすすめです。</p>
-  <a href="https://www.toriimusic.co.jp/16526/" class="button button-outline">詳細を見る</a>
-</div>
+        <!-- ★★★ 変更点 START ★★★ -->
+        <div class="piano-card piano-card--special">
+          <div class="special-price-badge">特価</div>
+          <div class="piano-image" style="background-image: url('images/S__48594993_0.jpg');"></div>
+          <h3>ヤマハ U1H</h3>
+          <div class="price-container">
+            <span class="original-price">通常価格 ￥363,000</span>
+            <strong class="sale-price">￥319,000 <span class="discount-badge">4.4万円OFF</span></strong>
+          </div>
+          <p>ヤマハのベーシックモデル。音色とタッチの双方が豊かであり、お子様の初めてのピアノにも非常におすすめです。</p>
+          <a href="https://www.toriimusic.co.jp/16526/" class="button button-outline">詳細を見る</a>
+        </div>
+        <!-- ★★★ 変更点 END ★★★ -->
 
-<div class="piano-card">
-  <div class="piano-image" style="background-image: url('images/DSC_0780.jpg');"></div>
-  <h3>ヤマハ U3A</h3>
-  <div class="price-container">
-    <strong class="sale-price">販売価格 ￥418,000</strong>
-  </div>
-  <p>X支柱構造による豊かな響きと音の伸び。レッスンにも最適なトーンエスケープ付きの中上級モデルです。</p>
-  <a href="https://www.toriimusic.co.jp/21546/" class="button button-outline">詳細を見る</a>
-</div>
+        <!-- ★★★ 変更点 START ★★★ -->
+        <div class="piano-card piano-card--special">
+          <div class="special-price-badge">特価</div>
+          <div class="piano-image" style="background-image: url('images/DSC_0780.jpg');"></div>
+          <h3>ヤマハ U3A</h3>
+          <div class="price-container">
+            <span class="original-price">通常価格 ￥418,000</span>
+            <strong class="sale-price">￥396,000 <span class="discount-badge">2.2万円OFF</span></strong>
+          </div>
+          <p>豊かな響きと音の伸びが特徴。レッスンにも最適なトーンエスケープ付きの中上級モデルです。</p>
+          <a href="https://www.toriimusic.co.jp/21546/" class="button button-outline">詳細を見る</a>
+        </div>
+        <!-- ★★★ 変更点 END ★★★ -->
 
       </div>
       <div class="consultation-section">
